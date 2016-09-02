@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="cx5-Zc-7J7">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Rll-fp-CRq" customClass="LoginController" customModule="ExampleVIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tJ2-Gk-f20"/>
+                        <viewControllerLayoutGuide type="bottom" id="vR5-8I-GiC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Abq-0y-8if">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMj-rh-gKl">
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Rll-fp-CRq" eventType="touchUpInside" id="9XX-70-p6T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="AMj-rh-gKl" secondAttribute="trailing" constant="20" id="fu2-Eg-HLe"/>
+                            <constraint firstItem="AMj-rh-gKl" firstAttribute="centerX" secondItem="Abq-0y-8if" secondAttribute="centerX" id="gcP-m7-aPd"/>
+                            <constraint firstItem="vR5-8I-GiC" firstAttribute="top" secondItem="AMj-rh-gKl" secondAttribute="bottom" constant="146" id="kFZ-yL-bGv"/>
+                            <constraint firstItem="AMj-rh-gKl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Abq-0y-8if" secondAttribute="leadingMargin" constant="20" id="o8A-Fl-anD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="AMj-rh-gKl" id="E5R-Jr-sjY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHV-Xe-gK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="130"/>
+        </scene>
+    </scenes>
+</document>

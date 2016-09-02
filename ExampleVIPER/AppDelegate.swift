@@ -15,6 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if let window = window {
+            window.backgroundColor = UIColor.white
+            let navController = UINavigationController()
+            window.rootViewController = navController
+            window.makeKeyAndVisible()
+
+            let wireframe: LoginWireframe = LoginWireframe(navigationController: navController)
+            
+            wireframe.present()
+        }
+        
         // Override point for customization after application launch.
         return true
     }

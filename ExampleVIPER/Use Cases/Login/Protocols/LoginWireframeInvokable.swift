@@ -1,0 +1,3 @@
+protocol LoginWireframeInvokable {
+    func present()
+}
